@@ -1,5 +1,5 @@
 # ENVIORMENT VARIABLES:
-export XDG_CONFIG_HOME="mydotfiles/.config"
+export XDG_CONFIG_HOME="$HOME/mydotfiles/.config"
 export BROWSER='brave-browser'
 export EDITOR="nvim"
 export VISUAL="nvim"
@@ -17,16 +17,13 @@ neofetch
 #ZSH_THEME=agnoster
 
 # TERMINAL COLOUR
-export LS_COLORS="di=38;5;245:"$LS_COLORS
+export LS_COLORS="di=39;5;245:"$LS_COLORS
 
 
 # ZsH ALIASES:
 if [ -f ~/mydotfiles/.config/zsh/.zsh_aliases ]; then
   . ~/mydotfiles/.config/zsh/.zsh_aliases
 fi
-
-# STARTUP TERMINAL DIMENSIONS:
-echo -e "\e[8;30;120t"
 
 # STARSHIP CONFIG
 eval "$(starship init zsh)"
